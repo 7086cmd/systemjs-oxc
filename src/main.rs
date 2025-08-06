@@ -15,15 +15,17 @@ fn main() {
         .unwrap_or_else(|err| panic!("{} not found.\n{err}", path.display()));
     let allocator = oxc::allocator::Allocator::default();
     let mut program = parse::parse_program(source_text.as_str(), &allocator);
-    let scoping = transform::transform_to_es5(&mut program, &allocator, path);
+    transform::transform_to_es5(&mut program, &allocator, path);
     let mut transpiler = transpiler::SystemJsTranspiler::new(
         transpiler_options,
         &allocator,
-        scoping,
-        source_text.as_str(),
     );
     transpiler.visit_program(&mut program);
     let codegen = codegen::generate_code(&program);
     println!("Transpiled Code:\n");
     println!("{}", codegen);
+    // Write to `translated.js`
+    let output_path = Path::new("translated.js");
+    std::fs::write(output_path, codegen)
+        .unwrap_or_else(|err| panic!("Failed to write to {}: {err}", output_path.display()));
 }

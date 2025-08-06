@@ -1,7 +1,7 @@
 use oxc::allocator::Allocator;
 use oxc::ast::ast;
 use oxc::semantic::{Scoping, SemanticBuilder};
-use oxc::transformer::{ESTarget, EnvOptions, TransformOptions, Transformer};
+use oxc::transformer::{EnvOptions, TransformOptions, Transformer};
 use std::path::Path;
 
 pub fn transform_to_es5<'a>(

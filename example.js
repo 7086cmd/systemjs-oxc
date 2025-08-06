@@ -1,11 +1,12 @@
-
 import * as f from 'a'
 export * as d from 'b'
-import { hello } from "c"
+export * from 'e'
+import 'hello.world'
+import { hello, d as w } from "c"
 export const e = 3
+const asp = 234
 import hellow from 'hello_world'
-export { b, afsj }
-export * as f from "d"
+export { b, afsj, asp as sixmco }
 
 this.a = 1
 function b() {
@@ -25,7 +26,7 @@ if (true) {
 }
 
 const afsj = 3432
-let vsa = 2342341
+let vsa = 2342341, sdvncjx = 28405982459732
 var dsjlndkb = 234323984
 
 export const fsd = 234342234
@@ -40,15 +41,26 @@ export class B {
     }
 }
 
+export const [a9, b9, , ...d1234] = [1, 2, 3]
+
+
 let [sadfsdaf, asdnjk, afiuwdfjsvnk] = [123, 42, 32]
 
-class A {
+export const { a10: a1234, b10 } = {}
+
+export class A {
 
 }
 
-// const { aasfdfsdafd: {wfeasdxvxdvcx} = sfdomivxcokfesd } = sdamovkxsdfsd;
+class C {
 
-export default b
+}
+
+export const { aasfdfsdafd: {wfeasdxvxdvcx} = sfdomivxcokfesd } = sdamovkxsdfsd;
+
+export default function hellow() {
+
+}
 
 let svjnkxc = async () => {
     console.log(void 0)
@@ -60,12 +72,6 @@ function helloworld() {
 
 export const sdcx = helloworld.apply(3)
 
-function b2222() {
-    return _b.apply(this, arguments);
-}
-function _b() {
-    _b = _asyncToGenerator(function* () {
-        return yield import("./c.js");
-    });
-    return _b.apply(this, arguments);
+export function b2222() {
+    return hello.apply(this, arguments);
 }
