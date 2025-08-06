@@ -13,7 +13,7 @@ pub fn transform_to_es5<'a>(
         // Estimate transformer will triple scopes, symbols, references
         .with_excess_capacity(2.0)
         .build(&program);
-    let env = EnvOptions::from_target("es5").expect("Should be able to create EnvOptions for ES5");
+    let env = EnvOptions::from_target("es2015").expect("Should be able to create EnvOptions for ES5");
     let options = TransformOptions {
         env,
         ..TransformOptions::default()

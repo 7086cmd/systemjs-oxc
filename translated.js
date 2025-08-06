@@ -1,14 +1,14 @@
 System.register([
 	"a",
+	"@oxc-project/runtime/helpers/asyncToGenerator",
 	"b",
 	"e",
 	"hello.world",
 	"c",
-	"hello_world",
-	"@oxc-project/runtime/helpers/asyncToGenerator"
+	"hello_world"
 ], function() {
 	"use strict";
-	var f, hello, w, hellow, _asyncToGenerator, B, A, C, e, asp, a2, b2, d2, a23, b23, d23, sfd, sdfewfsdvcx, afsj, vsa, sdvncjx, dsjlndkb, fsd, a9, b9, sadfsdaf, asdnjk, afiuwdfjsvnk, a1234, b10, wfeasdxvxdvcx, svjnkxc, sdcx;
+	var f, _asyncToGenerator, hello, w, hellow, B, A, C, e, asp, a2, b2, d2, a23, b23, d23, sfd, sdfewfsdvcx, afsj, vsa, sdvncjx, dsjlndkb, fsd, a9, b9, sadfsdaf, asdnjk, afiuwdfjsvnk, a1234, b10, wfeasdxvxdvcx, svjnkxc, sdcx;
 	function b() {
 		this.b = 2;
 		let sfvdkmcx = "23rewfdsvcx";
@@ -38,6 +38,9 @@ System.register([
 			function(_a) {
 				f = _a;
 			},
+			function(___oxc_project_runtime_helpers_asyncToGenerator) {
+				_asyncToGenerator = ___oxc_project_runtime_helpers_asyncToGenerator.default;
+			},
 			function(_b) {
 				_exports({});
 			},
@@ -55,9 +58,6 @@ System.register([
 			},
 			function(_hello_world) {
 				hellow = _hello_world.default;
-			},
-			function(___oxc_project_runtime_helpers_asyncToGenerator) {
-				_asyncToGenerator = ___oxc_project_runtime_helpers_asyncToGenerator.default;
 			}
 		],
 		execute: function() {
